@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Prime Number Finder</h2>
+        <label for="start">Start Range:</label>
+        <input type="number" id="start" min="1" placeholder="Start Number">
+        <br>
+        <label for="end">End Range:</label>
+        <input type="number" id="end" min="1" placeholder="End Number">
+        <br>
+        <button onclick="findPrimes()">Find Primes</button>
+        <br>
+    </div>
+    <div id="resultDiv">
+        <table id="result">
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script src="./main.js"></script>
+
+</html>
