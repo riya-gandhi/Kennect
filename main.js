@@ -26,9 +26,9 @@ function isPrime(num) {
 
 function renderOnPage(start, end, primes) {
   let resultTable = document.getElementById("result");
-  let tHead = document.createElement("thead");
-  let tRow = document.createElement("tr");
+  let tHead = document.getElementById("tablehead");
 
+  let tRow = document.createElement("tr");
   let numberCol = document.createElement("td");
   let resultCol = document.createElement("td");
   numberCol.innerText = "Number";
@@ -38,6 +38,7 @@ function renderOnPage(start, end, primes) {
   tableBody.innerHTML = "";
 
   tRow.append(numberCol, resultCol);
+  tHead.innerHTML = "";
   tHead.append(tRow);
   resultTable.append(tHead);
 
@@ -51,6 +52,6 @@ function renderOnPage(start, end, primes) {
 
     tRow.append(numberCol, resultCol);
     tableBody.append(tRow);
-    resultTable.append(tableBody);
   }
+  resultTable.append(tableBody);
 }
